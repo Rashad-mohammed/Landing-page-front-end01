@@ -1,0 +1,625 @@
+/* //////////////////////////////     HEADER      //////////////////////////////////////////// */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Calibri;
+}
+
+:root {
+    --degradblue: radial-gradient(rgb(139, 195, 245), #1294b8);
+    --blanc: #ffffff;
+    --noire: #000000;
+    --blue: #1294b8;
+    --grey: #808080;
+    --pcolor: #c7c7c7;
+}
+
+header {
+    background: var(--degradblue);
+    padding: 40px 0 100px 0;
+    margin-bottom: 100px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.logo {
+    text-decoration: none;
+    color: var(--blanc);
+    font-size: 35px;
+    /* font-weight: bold; */
+    margin-top: -25px;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    gap: 25px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--blanc);
+    font-size: 25px;
+}
+
+.ul-icon-header {
+    margin-left: 100px;
+}
+
+.icon-img {
+    width: 40px;
+    height: 40px;
+}
+
+ul li a img:hover {
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    -moz-filter: brightness(50%);
+    -o-filter: brightness(50%);
+    -ms-filter: brightness(50%);
+}
+
+.hamburger {
+    display: none;
+}
+
+/* ////////////////////////////////       section01      ///////////////////////////////////////////////// */
+
+.sec01 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.sec01 article {
+    width: 40%;
+}
+
+.sec01 article h2 {
+    font-size: 4.3rem;
+    font-weight: bold;
+    max-width: 600px;
+}
+
+.sec01 article p {
+    font-size: 1.4rem;
+    text-align: justify;
+    max-width: 450px;
+}
+
+.sec01 figure {
+    width: 40%;
+}
+
+/* ----------moteur cherche--------- */
+.search {
+    display: inline-block;
+    position: relative;
+}
+
+.search input {
+    width: 430px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-left: 30px;
+}
+
+.search button {
+    background: var(--degradblue);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 12px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .9s ease;
+    margin: 5px 5px;
+}
+
+input::placeholder {
+    color: var(--blue);
+}
+
+.search button:hover,
+.logo:hover,
+ul li a:hover {
+    color: var(--grey);
+}
+
+/* ////////////////////////////////       section02     feature ///////////////////////////////////////////////// */
+.prod-feat {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.prod-feat h2 {
+    font-size: 2.5rem;
+}
+
+.prod-feat p {
+    font-size: 1.5rem;
+    color: var(--pcolor);
+}
+
+.sec02 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.sec02 article {
+    width: 400px;
+    background: var(--degradblue);
+    border-radius: 10px;
+    color: var(--blanc);
+    text-align: center;
+    padding: 80px 40px 80px 40px;
+    transition: transform 0.3s ease;
+}
+
+.sec02 article:hover {
+    transform: translateY(-15px);
+}
+
+.sec02 article h2 {
+    padding-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.sec02 article p {
+    font-size: 20px
+}
+
+.sec02 article .icon02 {
+    width: 70px;
+    height: 70px;
+    padding-bottom: 20px;
+}
+
+/* ////////////////////////////////       section03    Teams ///////////////////////////////////////////////// */
+
+.div-team {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.div-team h3 {
+    color: var(--pcolor);
+}
+
+.img-person {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    filter: grayscale(100%);
+    /*  pour convertir l'image en blanc-noir */
+    transition: filter 0.4s ease;
+    position: relative;
+    z-index: 1;
+    transition: transform .1s;
+    margin-bottom: 20px;
+}
+
+.div-icons-teams {
+    display: none;
+}
+
+.div-team article:hover .img-person {
+    filter: grayscale(0%);      /*pour convertir l'image blanc-noir en couleurs*/
+    -ms-transform: scale(1.1);      /* Agrandit l'image à 110% de sa taille d'origine */
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.div-team article:hover .div-icons-teams {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    margin-top: 45px;
+    margin-left: 35px;
+}
+
+.div-icons-teams img {
+    width: 35px;
+    height: 35px;
+
+}
+
+/* ////////////////////////////////       ICON PARAMETTRE               //////////////////////////////////////////////// */
+.div-icon-paramettre {
+    width: 40px;
+    height: 40px;
+    background-color: var(--noire);
+    text-align: center;
+    position: fixed;
+    top: 500px;
+    left: 0;
+    z-index: 999;
+}
+
+.icon-paramettre {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    animation-name: rotation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ////////////////////////////////       section04  parallax   ///////////////////////////////////////////////// */
+.container-parallax {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.parallax-image {
+    background-image: url(images/parallax.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 1200px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: transform 0.4s ease;
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    -moz-filter: brightness(50%);
+    -o-filter: brightness(50%);
+    -ms-filter: brightness(50%);
+    /* filter: blur(3px);
+    -webkit-filter: blur(3px); */
+
+}
+
+.btn-parallax {
+    border: 1px solid var(--blanc);
+    background: none;
+    color: var(--blanc);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.btn-parallax:hover {
+    transform: scale(1.1);
+    background-color: var(--blanc);
+    color: var(--grey);
+}
+
+.parallax-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--blanc);
+    font-weight: bold;
+}
+
+/* ////////////////////////////////       section05  blog   ///////////////////////////////////////////////// */
+.sec-blog {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+
+}
+
+.sec-blog article {
+    text-align: center;
+}
+
+.sec-blog article p {
+    max-width: 430px;
+    text-align: justify;
+    color: var(--pcolor);
+}
+
+.sec-blog article:hover .img-blog {
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    -moz-filter: brightness(50%);
+    -o-filter: brightness(50%);
+    -ms-filter: brightness(50%);
+}
+
+.sec-blog article:hover .auteur-date {
+    display: block;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+/* -------------- */
+.auteur-date {
+    height: 60px;
+    color: var(--blanc);
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+.auteur {
+    display: inline-flex;
+    gap: 15px;
+}
+
+.icon-profil {
+    width: 20px;
+    height: 20px;
+}
+
+/* ------------- */
+
+.img-blog {
+    width: 430px;
+    height: 330px;
+    border-radius: 8px;
+    object-fit: cover;
+    position: relative;
+}
+
+#myBtn {
+    background: none;
+    background-color: none;
+    border: none;
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#more {
+    display: none;
+}
+
+.btn-learnmore {
+    border: none;
+    background-color: var(--blue);
+    color: var(--blanc);
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////       PRICING     ////////////////////////////////////////////////// */
+.sec-pric {
+    flex-direction: column;
+}
+
+.div1-pric {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.div1-pric article p {
+    max-width: 350px;
+}
+
+.div1-pric article {
+    margin-top: 50px;
+}
+
+.div-pric-happy {
+    display: flex;
+    gap: 50px;
+}
+
+.creativity img {
+    width: 450px;
+    height: 350px;
+}
+
+.our-pricing {
+    background-color: var(--pcolor);
+    text-align: center;
+    width: 80%;
+    margin: 50px 150px 50px 150px;
+    padding-bottom: 75px;
+    padding-top: 50px;
+}
+
+.our-pricing p {
+    color: var(--grey);
+    margin-bottom: 40px;
+}
+
+.article-price {
+    display: flex;
+    justify-content: space-around;
+}
+
+.article-price article {
+    background-color: var(--blanc);
+    border-radius: 8px;
+    height: 400px;
+    width: 360px;
+    padding: 30px;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+    position: relative;
+}
+
+.article-price article:hover {
+    transform: translateY(-25px);
+}
+
+.article-price article button {
+    width: 250px;
+    border: none;
+    background-color: var(--blue);
+    color: var(--blanc);
+    font-size: 20px;
+    border-radius: 4px;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+.tdl {
+    padding-right: 100px;
+}
+
+table tr td img {
+    width: 15px;
+    height: 15px;
+
+}
+
+.tspan2 {
+    font-size: 75px;
+    color: var(--blue);
+}
+
+.icon1-dollar {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: 1;
+    top: 75px;
+    left: 110px;
+}
+
+.icon2-dollar {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: 1;
+    top: 75px;
+    left: 80px;
+}
+
+.icon3-dollar {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    z-index: 1;
+    top: 75px;
+    left: 100px;
+}
+
+.art-2 .btn-sale {
+    width: 60px;
+    height: 60px;
+    border-radius: 0 8px 0 15px;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 300px;
+    background-color: var(--blue);
+    padding: 5px;
+}
+
+.btn-price {
+    padding: 5px;
+    margin-bottom: 50px;
+}
+
+.btn-price:hover,
+.btn-sale:hover {
+    color: var(--noire);
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////       bouton scroll to top      ////////////////////////////////////////////////// */
+#scrollToTopButton {
+    width: 60px;
+    height: 60px;
+    display: none;/* Caché par défaut */ 
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: var(--blanc);/* Couleur du texte */
+    border: none;
+    border-radius: 50%;/* Pour un bouton arrondi */
+    cursor: pointer;
+}
+
+.img-scroll {
+    width: 60px;
+    height: 60px;
+}
+
+#scrollToTopButton:hover {
+    background-color: var(--blue);/* Couleur de survol du bouton */
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////         Footer      ///////////////////////////////// */
+footer {
+    background-color: var(--noire);
+    color: var(--grey);
+    text-align: center;
+    height: 250px;
+    padding-top: 75px;
+}
+
+.divicons-footer {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.icons-footer {
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    border: 3px solid var(--blanc);
+    padding: 10px;
+}
+
+.icons-footer:hover {
+    background-color: var(--blue);
+}
