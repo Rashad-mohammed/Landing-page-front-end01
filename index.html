@@ -1,81 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-
-    <title>The SimpsonV2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-mobile320.css">
+    <link rel="stylesheet" href="style-mobile480.css">
+    <link rel="stylesheet" href="style-tablet768.css">
+    <link rel="stylesheet" href="style-ecran1024.css">
+    <title>Document</title>
 </head>
+
 <body>
-
-<div class="container">
-
+    <!--  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     //////////////////////////////     HEADER      ////////////////////////////////////////////  -->
     <header>
-        <div class="divheader" id="ancre_header">
-        <!-- ce div pour mediaquerymobile -->
-        <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-        
-        <h2 class="blue">OOoOoh PINAISE ! ...</h2>
-        </div>
-        <figure class="header"> 
-            <img class="imghead" src="media/Les-Simpson.jpg">
-        </figure>
+        <nav>
+            <a href="#" class="logo"><h1>Kucra</h1></a>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#ancre_feature">FEATURES</a></li>
+                <li><a href="#">CLIENT</a></li>
+                <li><a href="#ancre_pricing">PRICING</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#ancre_teams">ABOUT</a></li>
+                <li><a href="#ancre_blog">BLOG</a></li>
+                <li><a href="#ancre_contact">CONTACT</a></li>
 
-        <nav class="blue navbar" id="">
-            <ul class="nav-menu active">
-                <li class="nav-item"><a href="#ancre_header" class="nav-link">Accueil</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Film</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Personnages</a></li>
-                <li class="nav-item"><a href="#ancre_histoire" class="nav-link">Histoire</a></li>
-                <li class="nav-item"><a href="#ancre_matt" class="nav-link">Matt Groening</a></li>
+                <ul class="ul-icon-header">
+                    <li><a href="https://www.facebook.com/"><img src="images/icon-facebook.png" alt="facebook" class="icon-img"></a></li>
+                    <li><a href="https://twitter.com/"><img src="images/icon-twitter.png" alt="Twitter" class="icon-img"></a></li>
+                    <li><a href="https://www.instagram.com/"><img src="images/icon-instagram.png" alt="Instagram" class="icon-img"></a></li>
+                </ul>                
             </ul>
-            
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
-    </header>
+        <!-- ----------section01------------- -->
+        <section class="sec01">
+            <article>
+                <h2>We are StartUp Creative Kucra Agency</h2>
+                <p>carefully crafted after analysing the needs of different industries and the design achieves a great balance between purpose & presentation
+                </p><br><br>
+                <div class="search">
+                    <input placeholder="Enter your email" type="text">
+                    <button type="submit">SUBSCRIBE</button>
+                </div>
 
-    <div class="section">
-
-            <article id="ancre_histoire">
-                <h1>Les Simpsons</h1>
-                <p>
-                        Les Simpson (The Simpsons) sont une série télévisée d'animation américaine1 créée par Matt Groening et diffusée pour la première fois à partir du 17 décembre 1989 sur le réseau Fox. En 2020, elle est diffusée sur Disney+.
-
-                        Elle met en scène les Simpson, stéréotype d'une famille de classe moyenne américaine2. Leurs aventures servent une satire du mode de vie américain. Les membres de la famille, sont Homer, Marge, Bart, Lisa, Maggie, ainsi que Abe, le père d'Homer.
-
-                        Depuis ses débuts, la série a récolté des dizaines de récompenses, dont trente-deux Primetime Emmy Awards, trente Annie Awards et un Peabody Award. Le Time Magazine du 31 décembre 1999 l'a désignée comme la meilleure série télévisée du xxe siècle et elle a obtenu une étoile sur le Hollywood Walk of Fame le 14 janvier 2000. « D'oh! », l'expression d'abattement d'Homer Simpson, est entrée dans la langue anglaise. Ce n'est pas le seul mot à être entré dans le dictionnaire anglais, embiggen (« engrandi » en français) est un mot inventé par les Simpson qui est aussi entré dans la langue anglaise. L'influence des Simpson s'exerce également sur d'autres sitcoms.
-                </p>       
-                <div class="divimages">
-                    <img class="image02" src="media/image02.jpg">
-                    <img class="image02" src="media/image02.jpg">
-                    <img class="image02" src="media/image02.jpg">
-                </div>    
             </article>
-
-
-            <aside class="blue" id="ancre_matt">
-                <figure>
-                    <img class="image03" src="media/image03.jpg">
-                    <figcaption>
-                        <h2>Matt Groening</h2>
-                        <h3>Dessinateur</h3>   
-                        <p>Matthew Abram Groening, né le 15 février 1954 à Portland (Oregon), est un dessinateur, scénariste et producteur de télévision américain. Il est le créateur du comic strip Life in Hell et des séries télévisées d'animation Les Simpson, Futurama et Désenchantée.</p>
-                    </figcaption>
-                </figure>
-
-            </aside>
+            <figure>
+                <img src="images/illustration.svg" alt="img-illustration" class="img-illustration">
+            </figure>
+        </section>
+    </header>
+    <!--  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     ////////////////////////////////       section02    Feature  /////////////////////////////////////////////////     -->
+    <div class="prod-feat" id="ancre_feature">
+        <h2>Products Features</h2>
+        <p>It is a long eastablished fact that a read will be of a page when established fact looking at its layout
+        </p>
     </div>
 
-    <footer class="darkBlue">
-        <small>
-            @2015 The Simpsons Elan
-        </small>
+    <section class="sec02">
+        <article>
+            <img src="images/icon-globe.png" alt="icon-globe" class="icon02">
+            <h2>Digital Design</h2>
+            <p>Some quick example text to build on the card title and make up the bulk of the card the platform.</p>
+        </article>
+        <article>
+            <img src="images/icon-brosse.png" alt="icon-brosse" class="icon02">
+            <h2>Unlimited Colors</h2>
+            <p>Credibly brand stanaads compliant user exteible service college Anibn ocean euismod tincidunt laoreet</p>
+        </article>
+        <article>
+            <img src="images/icon-echecs.png" alt="icon-echecs.png" class="icon02">
+            <h2>Strtegy Solution</h2>
+            <p>Separated they live in Bookmarks grove right at the coast of the Semantics , a large ocean regelialia.</p>
+        </article>
+    </section>
+    <!--  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     ////////////////////////////////       section03   TEAMS   /////////////////////////////////////////////////     -->
+    <section id="ancre_teams">
+        <div class="prod-feat">
+            <h2>We'r dynamic team of talented people of <br> innovative & marketing expert</h2><br>
+            <p>To achieve this , it would be necessary to have uniform grammar , pronunciation <br>and more common
+                words. If several languages of the resulting language.</p>
+        </div>
+
+        <div class="div-team">
+            <article>
+                <h2>1499+</h2>
+                <h3>Complete Projects</h3><br>
+                <div class="div-icons-teams">
+                    <a href="https://www.facebook.com/"><img src="images/logo-facebook.png" alt="facebook"></a>
+                    <a href="https://twitter.com/"><img src="images/logo-twitter.png" alt="twitter"></a>
+                    <a href="https://www.skype.com/fr/"><img src="images/logo-skype.png" alt="skype"></a>
+                </div>
+                <a href="#"><img src="images/person1.png" alt="Anna G" class="img-person"></a>
+                <h2>Anna G.wilhite</h2>
+                <h3>CEO/Founder</h3>
+            </article>
+            <article>
+                <h2>1080k</h2>
+                <h3>Satisfued Clients</h3><br>
+                <div class="div-icons-teams">
+                    <a href="https://www.facebook.com/"><img src="images/logo-facebook.png" alt="facebook"></a>
+                    <a href="https://twitter.com/"><img src="images/logo-twitter.png" alt="twitter"></a>
+                    <a href="https://www.skype.com/fr/"><img src="images/logo-skype.png" alt="skype"></a>
+                </div>
+                <a href="#"><img src="images/person2.png" alt="William" class="img-person"></a>
+                <h2>Anna G.wilhite</h2>
+                <h3>CIO/Co-founder</h3>
+            </article>
+            <article>
+                <h2>608</h2>
+                <h3>Team Members</h3><br>
+                <div class="div-icons-teams">
+                    <a href="https://www.facebook.com/"><img src="images/logo-facebook.png" alt="facebook"></a>
+                    <a href="https://twitter.com/"><img src="images/logo-twitter.png" alt="twitter"></a>
+                    <a href="https://www.skype.com/fr/"><img src="images/logo-skype.png" alt="skype"></a>
+                </div>
+                <a href="#"><img src="images/person3.png" alt="Maria" class="img-person"></a>
+                <h2>Anna G.wilhite</h2>
+                <h3>Web Designer</h3>
+            </article>
+            <article>
+                <h2>252</h2>
+                <h3>Employee</h3><br>
+                <div class="div-icons-teams">
+                    <a href="https://www.facebook.com/"><img src="images/logo-facebook.png" alt="facebook"></a>
+                    <a href="https://twitter.com/"><img src="images/logo-twitter.png" alt="twitter"></a>
+                    <a href="https://www.skype.com/fr/"><img src="images/logo-skype.png" alt="skype"></a>
+                </div>
+                <a href="#"><img src="images/person4.png" alt="Luke" class="img-person"></a>
+                <h2>Anna G.wilhite</h2>
+                <h3>Web Developer</h3>
+            </article>
+        </div>
+    </section>
+    <!--  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     ////////////////////////////////       ICON PARAMETTRE   /////////////////////////////////////////////////  -->
+    <div class="div-icon-paramettre"><img src="images/reglages.png" class="icon-paramettre" alt="img-paramettre"></div>
+    <!--  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     ////////////////////////////////       section04  parallax   /////////////////////////////////////////////////  -->
+    <section class="container-parallax">
+        <div class="parallax-image">
+        </div>
+        <div class="parallax-content">
+            <h2>L'ets get started with Kucra</h2>
+            <p>They are a good way to get you want to build something similar or use from existuing apps which will
+                reduce the coast,<br>effort and time of the developers.</p><br>
+            <button class="btn-parallax">Get Started</button>
+        </div>
+    </section>
+    <!--  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     ////////////////////////////////       section05  blog   /////////////////////////////////////////////////  -->
+    <div class="prod-feat"  id="ancre_blog">
+        <h2>Our Blog</h2>
+        <p>It is a long eastablished fact that a read will be of a page when established fact looking at its layout
+        </p>
+    </div>
+
+    <section class="sec-blog">
+
+        <article>
+            <div class="auteur-date">
+                <div class="auteur"><img src="images/icon-user.png" class="icon-profil" alt="icon-utilisateur">
+                    <h2>Calvin Carlo</h2>
+                </div><br>
+                <div class="auteur"><img src="images/icon-oclock.png" class="icon-profil" alt="icon-horloge">
+                    <h3>20th March 2021</h3>
+                </div>
+            </div>
+            <img src="images/blog3.png" class="img-blog" alt="img-blog1">
+            <h3>Doing a cross country road trip</h3><br>
+            <p>
+                We craft digital,graphic and dimensional thinking,to create category leading brand.
+                <span id="dots">...</span><span id="more">Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit.</span>
+                <button onclick="myFunction(this)" id="myBtn">Read more</button>
+            </p>
+
+        </article>
+
+        <article>
+            <div class="auteur-date">
+                <div class="auteur">
+                    <img src="images/icon-user.png" class="icon-profil" alt="icon-utilisateur">
+                    <h3>Calvin Carlo</h3><br>
+                </div><br>
+
+                <div class="auteur"><img src="images/icon-oclock.png" class="icon-profil" alt="icon-horloge">
+                    <h3>20th March 2021</h3>
+                </div>
+            </div>
+            <img src="images/blog1.png" class="img-blog" alt="img-blog2">
+            <h3>New exhibition at our Museum</h3><br>
+            <p>
+                Even the all-powerful Pointing has no control about the blind almost unorthographic.
+                <span id="dots">...</span><span id="more">Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit.</span>
+                <button onclick="myFunction(this)" id="myBtn">Read more</button>
+            </p>
+
+        </article>
+
+        <article>
+            <div class="auteur-date">
+                <div class="auteur"><img src="images/icon-user.png" class="icon-profil" alt="icon-horloge">
+                    <h2>Calvin Carlo</h2>
+                </div><br>
+                <div class="auteur"><img src="images/icon-oclock.png" class="icon-profil" alt="icon-utilisateur">
+                    <h3>20th March 2021</h3>
+                </div>
+            </div>
+            <img src="images/blog2.png" class="img-blog" alt="img-blog3">
+
+            <h3>Design your apps in your own way</h3><br>
+            <p>
+                Pityful a rethoric question ran over her cheek,then she continued her way.
+                <span id="dots">...</span><span id="more">Lorem ipsum dolor sit, amet consectetur adipisicing
+                    elit.</span><button onclick="myFunction(this)" id="myBtn">Read more</button>
+            </p>
+
+        </article>
+    </section>
+    <!--  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////       PRICING     /////////////////////////////////////  -->
+    <section class="sec-pric">
+        <div class="div1-pric">
+            <article>
+                <h2>We are digital creative landing Page</h2><br>
+                <p>The difference brtween a successful person and others is not a lock of strendth,not a lack of
+                    knowledge , but rather a lack of will.Composed in a pseudo-latin language wich more or less
+                    pseudo-latin language corresponds.</p><br>
+                <div class="div-pric-happy">
+                    <div>
+                        <h2>4957</h2>
+                        <p>Happy User</p>
+                    </div>
+                    <div>
+                        <h2>1599</h2>
+                        <p>Complete Project</p>
+                    </div>
+                </div><br>
+                <button class="btn-learnmore">Learn More</button>
+            </article>
+
+            <figure class="creativity">
+                <img src="images/creativity.png" alt="">
+            </figure>
+        </div>
+
+        <div class="our-pricing" id="ancre_pricing" >
+            <div>
+                <h2>Our Pricing</h2><br>
+                <p>It is a long established fact that a reader will be of a page when established fact looking at this layout.</p>
+            </div>
+            <div class="article-price">
+             <article>
+                <h3>Starter</h3>
+                <table>
+                    <caption><span class="tspan2"><img src="images/icon-dollar.png" class="icon1-dollar" alt="">9</span>/month</caption>
+                    <tr>    <td class="tdl"><img src="images/check.png" alt="">Bandwidth</td>   <td>1GB</td>   </tr>
+                    <tr>    <td class="tdl"><img src="images/check.png" alt="">Onlineespace</td>   <td>500MB</td>   </tr>
+                    <tr>    <td class="tdl"><img src="images/wrong.png" alt="">Support:No</td>   <td>NO</td>   </tr>
+                    <tr>    <td class="tdl"><img src="images/check.png" alt="">Domain</td>   <td>1</td>   </tr>
+                    <tr>    <td class="tdl"><img src="images/wrong.png" alt="">Hidden Fees</td>   <td>NO</td>   </tr>
+                </table>
+                <button class="btn-price">Join Now</button>
+             </article>
+
+             <article class="art-2">
+                <button class="btn-sale">20% Sale</button>
+                <h3>Advanced</h3>
+                <table>
+                    <caption><span class="tspan2"><img src="images/icon-dollar.png" class="icon2-dollar" alt="">19</span>/month</caption>
+                    <tr>    <td class="tdl"><img src="images/check.png" alt="">Bandwidth</td>   <td>2GB</td>   </tr>
+                    <tr>    <td class="tdl"><img src="images/check.png" alt="">Onlineespace</td>   <td>1GB</td>   </tr>
+                    <tr>    <td class="tdl"><img src="images/check.png" alt="">Support:No</td>   <td>YES</td>   </tr>
+                    <tr>    <td class="tdl"><img src="images/check.png" alt="">Domain</td>   <td>3</td>   </tr>
+                    <tr>    <td class="tdl"><img src="images/check.png" alt="">Hidden Fees</td>   <td>NO</td>   </tr>
+                </table>
+                <button  class="btn-price">Join Now</button>
+             </article>
+             <article>
+                <h3>Proffesional</h3>
+                <table>
+                    <caption><span class="tspan2"><img src="images/icon-dollar.png" class="icon3-dollar" alt="">29</span>/month</caption>
+                    <tr>    <td class="tdl"><img src="images/check.png" alt="">Bandwidth</td>   <td>3GB</td>   </tr>
+                    <tr>    <td class="tdl"><img src="images/check.png" alt="">Onlineespace</td>   <td>2GB</td>   </tr>
+                    <tr>    <td class="tdl"><img src="images/check.png" alt="">Support:No</td>   <td>YES</td>   </tr>
+                    <tr>    <td class="tdl"><img src="images/check.png" alt="">Domain</td>   <td>unlimited</td>   </tr>
+                    <tr>    <td class="tdl"><img src="images/check.png" alt="">Hidden Fees</td>   <td>NO</td>   </tr>
+                </table>
+                <button class="btn-price">Join Now</button>
+             </article>
+            </div>
+            
+        </div>
+    </section>
+    <!--  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    //////////////////////////////////       FOOTER     ///////////////////////////////////////  -->
+    <footer id="ancre_contact">
+        <div class="divicons-footer">
+            <a href="https://www.facebook.com/"><img src="images/icon-facebook.png" class="icons-footer" alt="facebook"></a>  
+            <a href="https://twitter.com/"><img src="images/icon-twitter.png" class="icons-footer" alt="twitter"></a>  
+            <a href="https://fr.linkedin.com/"><img src="images/linkedin (2).png" class="icons-footer" alt="linkedin"></a> 
+            <a href="https://www.google.com/"><img src="images/google.png" class="icons-footer" alt="google"></a> 
+        </div>
+        <p>Terms & condition  |  privacy Policy  |  contact Us  <br>
+           2022 © Kucra - landing Page Template by Pichforest
+        </p>
     </footer>
-</div>
-<script src="js/app.js"></script>
+    <!-- ///////////////////////       bouton scroll to top      ////////////////////////////////////////////////// -->
+    <button id="scrollToTopButton" onclick="scrollToTop()"><img src="images/fleche haut.png" class="img-scroll" alt=""></button>
+    <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <script src="script.js"></script>
 </body>
+
 </html>
